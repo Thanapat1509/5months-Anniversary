@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5 Months Anniversary </title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="stars" id="stars"></div>
+  <div class="petals-bg" id="petals"></div>
+
+  <div class="page">
+
+    <!-- ✏️ EDIT: small tag line at the top -->
+    <div class="tag">✦Happy 5 months Anniversary, My Love ✦</div>
+
+    <!-- ✏️ EDIT: the big number -->
+    <div class="number">5</div>
+
+    <!-- ✏️ EDIT: label below the number -->
+    <div class="months-label">Months Together</div>
+
+    <div class="divider">
+      <div class="divider-line"></div>
+      <span class="divider-heart">♥</span>
+      <div class="divider-line"></div>
+    </div>
+
+    <!-- ✏️ EDIT: main subtitle paragraph -->
+    <div class="subtitle">
+      Five months of beautiful memories and happy moments together, thank you for being my everything and coming into my life.
+    </div>
+
+    <!-- ✏️ EDIT: button text -->
+    <button class="celebrate-btn" onclick="openPopup()">
+      ♥ &nbsp;Open My Love Letter &nbsp;♥
+    </button>
+
+  </div>
+
+  <!-- ══════════════════════════════ POPUP ══════════════════════════════ -->
+  <div class="overlay" id="overlay" onclick="handleOverlayClick(event)">
+    <div class="popup" id="popup">
+      <button class="close-btn" onclick="closePopup()">×</button>
+
+      <!-- ✏️ EDIT: emoji row at top of popup -->
+      <span class="popup-hearts">🌸💕🌸</span>
+
+      <!-- ✏️ EDIT: popup heading -->
+      <div class="popup-title">Happy 5-Month<br>Anniversary, My Love</div>
+
+      <div style="height: 20px"></div>
+
+      <!-- ✏️ EDIT: big number inside popup -->
+      <div class="popup-counter">5</div>
+
+      <!-- ✏️ EDIT: small label under popup number -->
+      <div class="popup-counter-sub">months of us</div>
+
+      <div class="popup-divider"></div>
+
+      <!-- ✏️ EDIT: main romantic message inside popup -->
+      <div class="popup-message">
+        Every moment with you is a treasure, You are my everything, and I love you all my heart, you're the best part of my life.
+      </div>
+
+      <!-- ✏️ EDIT: button inside popup -->
+      <button class="popup-btn" onclick="burst(); closePopup()">Send My Love ♥</button>
+    </div>
+  </div>
+
+ <div class="album-section">
+ 
+    <div class="album-header">
+      <div class="divider">
+        <div class="divider-line"></div>
+        <span class="divider-heart">♥</span>
+        <div class="divider-line"></div>
+      </div>
+      <!-- ✏️ EDIT: album title -->
+      <div class="album-title">Our Beautiful Moments</div>
+      <!-- ✏️ EDIT: album subtitle -->
+      <div class="album-sub">Every picture holds a memory I'll treasure forever</div>
+    </div>
+ 
+    <div class="album-grid">
+ 
+      <!-- ✏️ EDIT: Replace photo1.jpg~photo8.jpg with your actual image filenames -->
+      <!-- Put your image files in the SAME folder as index.html -->
+ 
+      <div class="album-card">
+        <div class="album-img-wrap">
+          <img src="pic1.png" alt="Our moment 1" onerror="this.style.display='none';this.parentElement.classList.add('placeholder')">
+          <div class="placeholder-text">📷 pic1.png</div>
+        </div>
+        <!-- ✏️ EDIT: caption for each photo -->
+        <div class="album-caption">Fortune ♥</div>
+      </div>
+ 
+      <div class="album-card">
+        <div class="album-img-wrap">
+          <img src="pic2.png" alt="Our moment 2" onerror="this.style.display='none';this.parentElement.classList.add('placeholder')">
+          <div class="placeholder-text">📷 pic2.png</div>
+        </div>
+        <div class="album-caption">Valorant together ♥</div>
+      </div>
+ 
+      <div class="album-card">
+        <div class="album-img-wrap">
+          <img src="pic3.png" alt="Our moment 3" onerror="this.style.display='none';this.parentElement.classList.add('placeholder')">
+          <div class="placeholder-text">📷 pic3.png</div>
+        </div>
+        <div class="album-caption">My fav drawing ♥</div>
+      </div>
+ 
+      <div class="album-card">
+        <div class="album-img-wrap">
+          <img src="pic4.png" alt="Our moment 4" onerror="this.style.display='none';this.parentElement.classList.add('placeholder')">
+          <div class="placeholder-text">📷 pic4.png</div>
+        </div>
+        <div class="album-caption">hmmm... ♥</div>
+      </div>
+ 
+      <div class="album-card">
+        <div class="album-img-wrap">
+          <img src="pic5.png" alt="Our moment 5" onerror="this.style.display='none';this.parentElement.classList.add('placeholder')">
+          <div class="placeholder-text">📷 pic5.png</div>
+        </div>
+        <div class="album-caption">Fuji ♥</div>
+      </div>
+ 
+      <div class="album-card">
+        <div class="album-img-wrap">
+          <img src="pic6.png" alt="Our moment 6" onerror="this.style.display='none';this.parentElement.classList.add('placeholder')">
+          <div class="placeholder-text">📷 pic6.png</div>
+        </div>
+        <div class="album-caption">Cute ♥</div>
+      </div>
+ 
+      <div class="album-card">
+        <div class="album-img-wrap">
+          <img src="pic7.png" alt="Our moment 7" onerror="this.style.display='none';this.parentElement.classList.add('placeholder')">
+          <div class="placeholder-text">📷 pic7.png</div>
+        </div>
+        <div class="album-caption">Kiss kiss ♥</div>
+      </div>
+ 
+      <div class="album-card">
+        <div class="album-img-wrap">
+          <img src="pic8.png" alt="Our moment 8" onerror="this.style.display='none';this.parentElement.classList.add('placeholder')">
+          <div class="placeholder-text">📷 pic8.png</div>
+        </div>
+        <div class="album-caption">My favourite picture</div>
+      </div>
+ 
+    </div>
+ 
+    <div class="album-footer">✦ &nbsp; made with love &nbsp; ✦</div>
+ 
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
